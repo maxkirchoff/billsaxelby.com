@@ -1,0 +1,59 @@
+{% set navItems = [
+	{
+		url: '/#biography',
+		slug: 'biography',
+		title: 'Biogrpahy'
+	},
+	{
+		url: '/#experience',
+		slug: 'experience',
+		title: 'Experience'
+	},
+	{
+		url: '/#employment-history',
+		slug: 'employment-history',
+		title: 'Employment History'
+	},
+	{
+		url: '/#contact',
+		slug: 'contact',
+		title: 'Contact'
+	}
+]
+%}
+
+{% set pageID = pageID | default('') %}
+
+
+<header class="header" role="banner">
+	<div class="logo">
+		<a href="/">
+			William Saxelby
+		</a>
+	</div>
+	<nav id="site-navigation">
+		<button class="menu-toggle">
+			<span class="open">
+				☰
+			</span>
+			<span class="close">
+				<svg width="100%" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <g id="final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <g id="Nav" transform="translate(-20.000000, -24.000000)" fill="#FFFFFF">
+				            <polygon id="+" transform="translate(27.568696, 32.052623) scale(1, -1) rotate(314.000000) translate(-27.568696, -32.052623) " points="26.4524848 40.9823107 26.4524848 33.1688341 18.6390082 33.1688341 18.6390082 30.9364123 26.4524848 30.9364123 26.4524848 23.1229357 28.6849066 23.1229357 28.6849066 30.9364123 36.4983832 30.9364123 36.4983832 33.1688341 28.6849066 33.1688341 28.6849066 40.9823107"></polygon>
+				        </g>
+				    </g>
+				</svg>
+			</span>
+		</button>
+		<ul class="nav-items">
+			{% for navItem in navItems %}
+				<li {% if navItem.slug == 'home' %} class="mobile-only" {% endif %}>
+					<a href="{{ navItem.url }}" class="{% if navItem.button==true %} button {% endif %} {% if navItem.slug == pageID %} active {% endif %} {{navItem.slug}}">
+						{{ navItem.title }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

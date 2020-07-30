@@ -1,0 +1,216 @@
+.main {
+
+  margin-top: 15vw;
+
+  @media only screen and (min-width: $md-min-width) {
+    margin-top: 9vw;
+  }
+
+  > section {
+    padding: 0 7.5vw;
+  }
+
+  #power-statement {
+    .image {
+      width: 30%;
+      margin: 14vw auto 0;
+    }
+    h1 {
+      font-size: 18vw;
+      margin: 30vw 0 0;
+        text-align: center;
+
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 8vw;
+        line-height: 1;
+        margin: 3vw 0 0;
+      }
+    }
+
+    .subtitle {
+      text-align: center;
+        margin: 8vw 7.5vw 20vw 7.5vw;
+        @media only screen and (min-width: $md-min-width) {
+          margin: 4vw 20vw 14vw;
+
+        }
+
+    }
+  }
+
+  .section {
+    header {
+      h4 {
+        font-size: 7vw;
+        text-align: center;
+
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+
+  .project-links {
+    overflow: hidden;
+
+    a.project-link {
+
+      display: block;
+      margin: 0 -10vw 2.5vw;
+      padding: 0;
+
+      @media only screen and (min-width: $md-min-width) {
+        margin: 0 0 2.5vw;
+        width: 100%;
+      }
+
+      img, video {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .hero, .project-link {
+    position: relative;
+
+    video {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: row;
+      background-color: rgba(0,0,0,0.6);
+
+      img {
+        width: 30%;
+      }
+    }
+  }
+
+  #experience, #biography, #key-experiences, #employment-history, #education, #community {
+    padding: 15vw 7.5vw;
+
+    @media only screen and (min-width: $md-min-width) {
+      width: 100vw;
+      margin: 0 -5vw;
+      padding: 10vw 20vw;
+    }
+
+    .image {
+      margin-bottom: 10vw;
+    }
+
+    h1 {
+      font-family: $font-gt-america;
+      font-size: 4vw;
+
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 1.5vw;
+      }
+    }
+
+    h2 {
+      @media only screen and (min-width: $md-min-width) {
+        margin-bottom: 5vw;
+      }
+    }
+
+    h3 {
+      font-size: 3vw;
+      text-transform: uppercase;
+      font-family: $font-gt-america;
+      font-weight: bold;
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 1.1vw;
+        padding-left: 3.5vw;
+      }
+    }
+
+    .summary-list {
+      margin: 10vw 0;
+      @media only screen and (min-width: $md-min-width) {
+        margin: 3vw 0;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 6vw 0 0;
+      list-style: disc;
+      padding-left: 5vw;
+
+      @media only screen and (min-width: $md-min-width) {
+        margin: 1vw 0 0;
+        padding-left: 5vw;
+      }
+
+      li {
+        margin: 2.5vw 0;
+
+      }
+    }
+  }
+
+  #biography, #key-experiences, #education {
+    background: #000;
+    color: #fff;
+  }
+  #key-experiences {
+    ul {
+      list-style: none;
+      padding-left: 0;
+      @media only screen and (min-width: $md-min-width) {
+        columns: 3;
+      }
+
+
+      li {
+        margin: 5vw 0;
+        @media only screen and (min-width: $md-min-width) {
+          margin: 0 0 2.5vw;
+        }
+      }
+    }
+  }
+  #employment-history {
+    .employment {
+
+      .employment-item {
+        &:nth-of-type(n+2) {
+          &:before {
+            margin: 10vw 0 0;
+            content: " ";
+            display: block;
+            border-top: 1px solid #000;
+            @media only screen and (min-width: $md-min-width) {
+              margin: 5vw 0 0;
+
+            }
+          }
+
+          h4 {
+            margin-top: 10vw;
+            @media only screen and (min-width: $md-min-width) {
+              margin-top: 5vw;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
