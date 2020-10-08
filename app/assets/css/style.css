@@ -748,6 +748,8 @@ nav#site-navigation {
         padding: 10vw 20vw; } }
     .main #experience .image, .main #biography .image, .main #key-experiences .image, .main #employment-history .image, .main #education .image, .main #community .image {
       margin-bottom: 10vw; }
+    .main #experience .table, .main #biography .table, .main #key-experiences .table, .main #employment-history .table, .main #education .table, .main #community .table {
+      margin: 5vw -10vw 0; }
     .main #experience h1, .main #biography h1, .main #key-experiences h1, .main #employment-history h1, .main #education h1, .main #community h1 {
       font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
       font-size: 4vw; }

@@ -2,7 +2,7 @@
 	{
 		url: '/#biography',
 		slug: 'biography',
-		title: 'Biogrpahy'
+		title: 'Biography'
 	},
 	{
 		url: '/#experience',
